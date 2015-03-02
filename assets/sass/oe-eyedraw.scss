@@ -31,6 +31,10 @@
 @import "mixins";
 @import "placeholders";
 
+$ed-icon-prefix: "ed-icon";
+$ed-icon-width: 32px;
+$ed-icon-height: 32px;
+
 @import "components/toolbar";
 @import "components/icons";
 @import "components/editor";

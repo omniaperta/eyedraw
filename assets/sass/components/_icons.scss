@@ -14,10 +14,6 @@
 // * @copyright Copyright (c) 2011-2013, OpenEyes Foundation
 // * @license http://www.gnu.org/licenses/gpl-3.0.html The GNU General Public License V3.0
 
-$ed-icon-prefix: "icon-ed";
-$ed-icon-width: 32px;
-$ed-icon-height: 32px;
-
 [class*="#{$ed-icon-prefix}-"] {
 	@extend %hide-text;
 	display: inline-block;

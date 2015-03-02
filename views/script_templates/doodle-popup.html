@@ -27,14 +27,14 @@
 		<li>
 			{{#desc}}
 				<a class="ed-button ed-doodle-help{{lockedButtonClass}}" href="#" data-function="toggleHelp">
-					<span class="icon-ed-help"></span>
+					<span class="ed-icon-help"></span>
 				</a>
 			{{/desc}}
 		</li>
 		{{#doodle.isLocked}}
 			<li>
 				<a class="ed-button" href="#" data-function="unlock">
-					<span class="icon-ed-unlock"></span>
+					<span class="ed-icon-unlock"></span>
 					<span class="label">Unlock</span>
 				</a>
 			</li>
@@ -42,27 +42,27 @@
 		{{^doodle.isLocked}}
 			<li>
 				<a class="ed-button" href="#" data-function="lock">
-					<span class="icon-ed-lock"></span>
+					<span class="ed-icon-lock"></span>
 					<span class="label">Lock</span>
 				</a>
 			</li>
 		{{/doodle.isLocked}}
 		<li>
 			<a class="ed-button{{lockedButtonClass}}" href="#" data-function="moveToBack">
-				<span class="icon-ed-move-to-back"></span>
+				<span class="ed-icon-move-to-back"></span>
 				<span class="label">Move to back</span>
 			</a>
 		</li>
 		<li>
 			<a class="ed-button{{lockedButtonClass}}" href="#" data-function="moveToFront">
-				<span class="icon-ed-move-to-front"></span>
+				<span class="ed-icon-move-to-front"></span>
 				<span class="label">Move to front</span>
 			</a>
 		</li>
 		<li>
 			{{#doodle.isDeletable}}
 				<a class="ed-button{{lockedButtonClass}}" href="#" data-function="deleteSelectedDoodle">
-					<span class="icon-ed-delete"></span>
+					<span class="ed-icon-delete"></span>
 					<span class="label">Delete</span>
 				</a>
 			{{/doodle.isDeletable}}

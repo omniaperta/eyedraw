@@ -29,7 +29,7 @@
 				<?php foreach($mainItems as $item) {?>
 					<li id="<?php echo $item['classname'].$idSuffix ?>">
 						<a class="ed-button" href="#" data-function="addDoodle" data-arg="<?php echo $item['classname'] ?>">
-							<span class="icon-ed-<?php echo $item['classname'];?>"></span>
+							<span class="ed-icon-<?php echo $item['classname'];?>"></span>
 							<span class="label"><?php echo $item['title'] ?></span>
 						</a>
 					</li>
@@ -37,14 +37,14 @@
 				<?php if (count($extraItems)) {?>
 					<li>
 						<a class="ed-button ed-button-more" href="#">
-							<span class="icon-ed-More"></span>
+							<span class="ed-icon-More"></span>
 							<span class="label">More</span>
 						</a>
 						<ul class="ed-toolbar-panel-drawer">
 							<?php foreach($extraItems as $item) {?>
 								<li id="<?php echo $item['classname'].$idSuffix ?>">
 									<a class="ed-button" href="#" data-function="addDoodle" data-arg="<?php echo $item['classname'] ?>">
-										<span class="icon-ed-<?php echo $item['classname'];?>"></span>
+										<span class="ed-icon-<?php echo $item['classname'];?>"></span>
 										<span class="label"><?php echo $item['title'] ?></span>
 									</a>
 								</li>

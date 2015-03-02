@@ -25,14 +25,14 @@
 			<ul class="ed-toolbar-panel ed-drawing-toolbar">
 				<li>
 					<a class="ed-button" href="#" data-function="resetEyedraw">
-						<span class="icon-ed-reset"></span>
+						<span class="ed-icon-reset"></span>
 						<span class="label">Reset eyedraw</span>
 					</a>
 				</li>
 				<?php if ($toggleScale) {?>
 					<li>
 						<a class="ed-button" href="#" data-function="toggleZoom">
-							<span class="icon-ed-zoom-out"></span>
+							<span class="ed-icon-zoom-out"></span>
 							<span class="label">Toggle Zoom</span>
 						</a>
 					</li>

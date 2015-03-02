@@ -26,7 +26,7 @@ ED.Views.Toolbar.Drawing = (function() {
 
 	function DrawingToolbar(drawing, container) {
 		ED.Views.Toolbar.apply(this, arguments);
-		this.zoomIcon = this.container.find('[class^=icon-ed-zoom]');
+		this.zoomIcon = this.container.find('[class^=ed-icon-zoom]');
 	}
 
 	DrawingToolbar.prototype = Object.create(ED.Views.Toolbar.prototype);
@@ -45,17 +45,17 @@ ED.Views.Toolbar.Drawing = (function() {
 	DrawingToolbar.prototype.handleZoom = function(notification) {
 		switch(notification.eventName) {
 			case 'drawingZoomIn':
-				this.updateIcon('icon-ed-zoom-out');
+				this.updateIcon('ed-icon-zoom-out');
 			break;
 			case 'drawingZoomOut':
-				this.updateIcon('icon-ed-zoom-in');
+				this.updateIcon('ed-icon-zoom-in');
 			break;
 		}
 	};
 
 	DrawingToolbar.prototype.updateIcon = function(className) {
 		this.zoomIcon
-			.removeClass('icon-ed-zoom-in icon-ed-zoom-out')
+			.removeClass('ed-icon-zoom-in ed-icon-zoom-out')
 			.addClass(className);
 	};
 

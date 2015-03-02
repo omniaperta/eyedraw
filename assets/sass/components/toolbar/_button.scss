@@ -28,7 +28,7 @@
 		background: #118afb;
 	}
 	// Button icon
-	[class*="icon-ed-"] {
+	[class*="#{$ed-icon-prefix}-"] {
 		// Account for the borders
 		margin-left: -1px;
 		margin-top: -1px;
