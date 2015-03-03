@@ -471,7 +471,7 @@ ED.Controller = (function() {
 	Controller.prototype.saveDrawingToInputField = function(force) {
 		if ((force && this.hasInputField()) || this.hasInputFieldData()) {
 			this.input.value = this.drawing.save();
-			$(this).input.change();
+			$(this.input).change();
 		}
 	};
 
